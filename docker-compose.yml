@@ -1,0 +1,22 @@
+services:
+  node:
+    image: "node-app"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "3000:3000"
+    command: "npm start"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: "mongodb"
+    ports:
+      - "27017:27017"
+    volumes:
+      - type: bind
+        source: ./mongodb
+        target: /data/db
