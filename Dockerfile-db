@@ -2,4 +2,6 @@ FROM mongodb/mongodb-community-server:7.0-ubi8
 
 WORKDIR /mongodb   
 
+COPY mongod.conf /etc/mongod.conf
+
 EXPOSE 27017 

@@ -1,18 +1,19 @@
 services:
-  node:
+  app_server:
     image: "node-app"
     user: "node"
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
+      - MONGODB_URI=mongodb://db_server:27017/test
     volumes:
       - ./:/home/node/app
     ports:
       - "3000:3000"
     command: "npm start"
     depends_on:
-      - mongodb
-  mongodb:
+      - db_server
+  db_server:
     image: "mongodb"
     ports:
       - "27017:27017"
