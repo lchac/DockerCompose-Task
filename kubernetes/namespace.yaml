@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: web-app-ns
+---
+apiVersion: v1
+kind: ConfigContext
+metadata:
+  name: web-app-context
+context:
+  cluster: luis-cluster
+  namespace: web-app-ns
+  # user:
