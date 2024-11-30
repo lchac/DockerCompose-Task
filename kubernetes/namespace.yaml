@@ -10,4 +10,4 @@ metadata:
 context:
   cluster: luis-cluster
   namespace: web-app-ns
-  # user:
+  user: luis-cluster
