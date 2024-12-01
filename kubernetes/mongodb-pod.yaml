@@ -12,7 +12,7 @@ spec:
       ports:
         - containerPort: 27017
       env:
-        - name: MONGO_INITDB_ROOT_USERNAME
+        - name: MONGODB_INITDB_ROOT_USERNAME_FILE
           value: "admin"
-        - name: MONGO_INITDB_ROOT_PASSWORD
+        - name: MONGODB_INITDB_ROOT_PASSWORD_FILE
           value: "MyPass1973"
