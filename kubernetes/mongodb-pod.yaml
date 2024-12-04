@@ -9,6 +9,7 @@ spec:
   containers:
     - name: mongo-db-container
       image: luischacon/mongo-db:latest
+      args: ["--platform=linux/amd64"]
       ports:
         - containerPort: 27017
       env:
