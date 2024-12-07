@@ -16,3 +16,7 @@ spec:
           value: "admin"
         - name: MONGODB_INITDB_ROOT_PASSWORD_FILE
           value: "MyPass1973"
+  volumes:
+    - name: ebs
+      persistentVolumeClaim:
+        claimName: mongo-pvc
