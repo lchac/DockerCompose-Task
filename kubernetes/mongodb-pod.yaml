@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: mongo-db-container
-      image: node:lts-alpine3.20
+      image: 7.0-jammy
       ports:
         - containerPort: 27017
       env:
