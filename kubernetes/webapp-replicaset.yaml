@@ -24,4 +24,4 @@ spec:
             - name: MONGODB_URI
               value: "mongodb://mongo-db-service:27017/test"
             - name: NODE_ENV
-              value: "development"
+              value: "production"

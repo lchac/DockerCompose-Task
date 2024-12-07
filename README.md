@@ -43,8 +43,6 @@ kubectl get services -n web-app-ns
 
 kubectl get replicaset -n web-app-ns
 
-kubectl get replicaset -n web-app-ns
-
 kubectl get services -n web-app-ns
 
 kubectl config get-contexts
