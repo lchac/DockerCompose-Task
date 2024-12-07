@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: mongo-db-container
-      image: 7.0-jammy
+      image: amd64/mongo:7.0-jammy
       ports:
         - containerPort: 27017
       env:
