@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: web-app-container
-          image: amazon/nodejs:18
+          image: node:18-bullseye
           ports:
             - containerPort: 3000
           env:
