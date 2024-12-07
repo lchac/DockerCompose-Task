@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: web-app-container
-          image: luischacon/web-app:latest
+          image: node:23-alpine3.19`
           ports:
             - containerPort: 3000
           env:
